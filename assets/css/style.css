@@ -1,0 +1,331 @@
+/* -----------------------------------*/
+/* --------->>> General <<<-----------*/
+/* -----------------------------------*/
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* -----------------------------------*/
+/* --------->>> hero image <<<--------*/
+/* -----------------------------------*/
+
+.hero{
+    height: 100vh;
+    background: url(../img/hero5.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.hero-text{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 18em;
+}
+
+.hero-title{
+    font-family: 'Pacifico', cursive;
+    font-size: 90px;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+}
+
+.hero-link{
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 22px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    padding: 4px 12px;
+    background-color: rgba(40,40,40,0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-link:hover{
+    color: #000000;
+    background: #ffffff;
+    text-decoration: none;
+}
+
+/* -----------------------------------*/
+/* ------->>> custom navbar <<<-------*/
+/* -----------------------------------*/
+.navbar-default {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand{
+    line-height: 60px;
+    height: 64px;
+    padding-top: 6px;
+}
+
+.nav.navbar-nav.navbar-right li a{
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 80px;
+    height: 64px;
+    padding-top: 0;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+/* -----------------------------------*/
+/* --------->>> sections <<<----------*/
+/* -----------------------------------*/
+
+.section-content{
+    padding-top: 50px;
+}
+
+/* -----------------------------------*/
+/* ------------>>> over <<<-----------*/
+/* -----------------------------------*/
+
+.box{
+    margin-top: 1em;
+    margin-bottom: 4em;
+}
+
+.box:hover .over-icon{
+    color: #4CAF50;
+}
+
+.boxes{
+    margin-top: 3em;
+}
+
+.over-box{
+    text-align: center;
+}
+
+.over-icon{
+    font-size: 42px;
+    margin-bottom: 2em;
+    transition: all 0.3s ease-in-out;
+}
+
+/* -----------------------------------*/
+/* ----------->>> Team <<<------------*/
+/* -----------------------------------*/
+
+.team-box{
+    text-align: center;
+}
+
+.profile-pic{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+
+/* -----------------------------------*/
+/* ---------->>> counter <<<----------*/
+/* -----------------------------------*/
+
+#counter{
+    background: url(../img/hero.jpg) no-repeat fixed;
+    height: 200px;
+    background-size: cover;
+}
+
+.counter-box{
+    text-align: center;
+    color: #ffffff;
+    height: 100px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.counter-number{
+    font-size: 60px;
+}
+
+/* -----------------------------------*/
+/* ---------->>> contact <<<----------*/
+/* -----------------------------------*/
+
+#contact{
+    margin-bottom: 40px;
+}
+
+.icon-contact{
+    font-size: 40px;
+    margin-top: 22px;
+}
+
+.social-link{
+    color: #000000;
+    font-size: 25px;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.contact-send{
+    width: 100%;
+    background-color: #323232;
+    color: #ffffff;
+    padding: 6px 8px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-send:hover{
+    background-color: grey;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* -----------------------------------*/
+/* ------------>>> map <<<------------*/
+/* -----------------------------------*/
+
+#map{
+    height: 400px;
+}
+
+#map-frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+/* -----------------------------------*/
+/* ----------->>> footer <<<----------*/
+/* -----------------------------------*/
+
+.footer{
+    background-color: #f7f7f7;
+    color: #323232;
+    position: relative;
+    width: 100%;
+    display: block;
+    padding-top: 40px;
+}
+
+.mb-60{
+    margin-bottom: 30px;
+}
+
+.footer-logo{
+    margin-top: 30px;
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0px;
+    color: #323232;
+    margin-top: 0.8em;
+}
+
+.footer-title{
+    border-bottom: 1px dashed;
+    margin-bottom: 25px;
+}
+
+.footer a{
+    color: #323232;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: grey;
+}
+
+.copyright{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* -----------------------------------*/
+/* --------->>> hero page <<<---------*/
+/* -----------------------------------*/
+
+.hero-page-it{
+    height: 400px;
+    width: 100%;
+    background: url(../img/it.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.hero-page-comm{
+    height: 400px;
+    width: 100%;
+    background: url(../img/comm.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.hero-page-hotspot{
+    height: 400px;
+    width: 100%;
+    background: url(../img/hotspot.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.hero-page-contact{
+    height: 400px;
+    width: 100%;
+    background: url(../img/contact.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.hero-text-page{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 9em;
+}
+
+.hero-title-page{
+    font-size: 90px;
+    color: #ffffff;
+}
+
+.hero-info-page{
+    background: rgba(255,255,255,0.9);
+    padding: 6px 12px;
+    display: inline-block;
+    color: #323232;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 3px;
+}
+
+
+/* -----------------------------------*/
+/* ------->>> Media queries <<<-------*/
+/* -----------------------------------*/
+@media (max-width: 991px){
+    #counter{
+        height: 300px;
+    }
+
+    .counter-box{
+        margin-bottom: 1.5em;
+    }
+}
+
+@media (max-width: 767px){
+    #counter{
+        height: 580px;
+    }
+
+    .counter-box{
+        margin-bottom: 2em;
+    }
+}

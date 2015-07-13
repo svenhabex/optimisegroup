@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /antwerpstransportforum/
+RewriteCond $1 !^(index\.php|images|robots\.txt|assets)
+RewriteRule ^(.*)$ /optimisegroup/index.php/$1 [L]
