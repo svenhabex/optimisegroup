@@ -8,8 +8,11 @@ class Hotspot extends CI_Controller {
     {
         $title['title'] = 'Optimise Group | HOTSPOT';
 
+        $this->load->model('project_model');
+        $data['projecten'] = $this->project_model->getProjectTitlesByCat(3);
+
         $this->load->view('templates/head', $title);
-        $this->load->view('pages/hotspot');
+        $this->load->view('pages/hotspot', $data);
         $this->load->view('templates/footer');
     }
 }

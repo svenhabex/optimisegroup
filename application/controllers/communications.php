@@ -8,8 +8,11 @@ class Communications extends CI_Controller {
     {
         $title['title'] = 'Optimise Group | COMMUNICATIONS';
 
+        $this->load->model('project_model');
+        $data['projecten'] = $this->project_model->getProjectTitlesByCat(2);
+
         $this->load->view('templates/head', $title);
-        $this->load->view('pages/communications');
+        $this->load->view('pages/communications', $data);
         $this->load->view('templates/footer');
     }
 }

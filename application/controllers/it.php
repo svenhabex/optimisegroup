@@ -8,8 +8,11 @@ class It extends CI_Controller {
     {
         $title['title'] = 'Optimise Group | IT';
 
+        $this->load->model('project_model');
+        $data['projecten'] = $this->project_model->getProjectTitlesByCat(1);
+
         $this->load->view('templates/head', $title);
-        $this->load->view('pages/it');
+        $this->load->view('pages/it', $data);
         $this->load->view('templates/footer');
     }
 }

@@ -9,7 +9,7 @@ class Project_model extends CI_Model {
 
     public function getAllProjectTitles()
     {
-        $this->db->select('proj_titel');
+        $this->db->select('proj_id, proj_titel');
         $this->db->from('project');
 
         $query = $this->db->get();
@@ -18,7 +18,7 @@ class Project_model extends CI_Model {
 
     public function getProjectTitlesByCat($cat)
     {
-        $this->db->select('proj_titel');
+        $this->db->select('proj_id, proj_titel');
         $this->db->from('project');
         $this->db->where('proj_cat', $cat);
 
@@ -26,20 +26,11 @@ class Project_model extends CI_Model {
         return $query->result();
     }
 
-    public function getAllProjects()
+    public function getProjectById($id)
     {
         $this->db->select('*');
         $this->db->from('project');
-
-        $query = $this->db->get();
-        return $query->result();
-    }
-
-    public function getProjectsByCat($cat)
-    {
-        $this->db->select('*');
-        $this->db->from('project');
-        $this->db->where('proj_cat', $cat);
+        $this->db->where('proj_id', $id);
 
         $query = $this->db->get();
         return $query->result();

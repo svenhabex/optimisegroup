@@ -115,7 +115,7 @@
         <div class="row boxes">
             <?php foreach($projecten as $project){ ?>
                 <div class="col-md-3 col-sm-6">
-                    <div class="project"><?= $project->proj_titel ?></div>
+                    <div class="project" id="<?= $project->proj_id ?>"><?= $project->proj_titel ?></div>
                 </div>
             <?php } ?>
         </div>
@@ -176,3 +176,41 @@
     <div id="map-frame">
     </div>
 </section>
+
+<div class="overlay">
+    <div class="modal-box">
+        <div class="close-btn"><i class="ion-close"></i></div>
+        <div class="text-box">
+            <p class="lead"></p>
+            <p class="text-project"></p>
+        </div>
+        <div class="graphic"></div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    $('.project').click(function(){
+        var project = $(this).attr('id');
+        $.ajax({
+            'type': "POST",
+            'url': "<?php echo site_url('portfolio/getProject'); ?>",
+            'data': {'project' : project},
+            'success': function (response) {
+                var projectInfo = $.parseJSON(response);
+                $('.lead').text(projectInfo[0].proj_titel);
+                $('.text-project').text(projectInfo[0].proj_beschrijving);
+                $('.graphic').css('background', 'url(' + projectInfo[0].proj_afbeelding + ') center right no-repeat')
+                $('.graphic').css('background-size', 'contain');
+
+                $('.overlay').addClass('is-open');
+            }
+        });
+    });
+
+    $('.close-btn').click(function(){
+        $('.overlay').removeClass('is-open');
+    });
+
+</script>
