@@ -8,8 +8,11 @@ class Home extends CI_Controller {
     {
         $title['title'] = 'Optimise Group | HOME';
 
+        $this->load->model('project_model');
+        $data['projecten'] = $this->project_model->getAllProjectTitles();
+
         $this->load->view('templates/head', $title);
-        $this->load->view('pages/home');
+        $this->load->view('pages/home', $data);
         $this->load->view('templates/footer');
     }
 }

@@ -109,6 +109,19 @@
         </div>
     </div>
 </section>
+<section id="portfolio">
+    <div class="container section-content">
+        <h1>Portfolio</h1>
+        <div class="row boxes">
+            <?php foreach($projecten as $project){ ?>
+                <div class="col-md-3 col-sm-6">
+                    <div class="project"><?= $project->proj_titel ?></div>
+                </div>
+            <?php } ?>
+        </div>
+    </div>
+</section>
+<hr>
 <section id="contact">
     <div class="container section-content">
         <h1>Contacteer ons</h1>
