@@ -4,8 +4,8 @@
     <?php $this->load->view('templates/menu.php') ?>
     <div class="hero-text">
         <p class="hero-title">We make <span style="color: #97cb4c ">IT</span> happen</p>
-        <a href="#over" class="hero-link">Meer info</a>
     </div>
+    <a href="#over"><i class="ion-chevron-down hero-link"></i></a>
 </div>
 <section id="over">
     <div class="container section-content">

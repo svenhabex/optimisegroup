@@ -15,6 +15,7 @@ body{
     height: 100vh;
     background: url(../img/hero5.jpg) no-repeat fixed;
     background-size: cover;
+    position: relative;
 }
 
 .hero-text{
@@ -32,21 +33,19 @@ body{
 }
 
 .hero-link{
+    position: absolute;
     display: block;
-    width: 250px;
-    margin: 0 auto;
+    left: 50%;
+    top: 100vh;
+    margin-top: -60px;
+    margin-left: -25px;
     color: #ffffff;
-    font-size: 22px;
-    border: 1px solid #ffffff;
-    border-radius: 15px;
-    padding: 4px 12px;
-    background-color: rgba(40,40,40,0.5);
+    font-size: 50px;
     transition: all 0.3s ease-in-out;
 }
 
 .hero-link:hover{
-    color: #000000;
-    background: #ffffff;
+    color: lightgrey;
     text-decoration: none;
 }
 
@@ -468,11 +467,6 @@ body{
 
     .hero-title{
         font-size: 70px;
-    }
-
-    .hero-link{
-        width: 180px;
-        font-size: 15px;
     }
 
     .hero-page-comm .hero-title-page{
