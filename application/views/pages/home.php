@@ -1,3 +1,5 @@
+<script src="<?php echo base_url(); ?>assets/js/map1.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <div class="hero">
     <?php $this->load->view('templates/menu.php') ?>
     <div class="hero-text">
@@ -173,7 +175,7 @@
     </div>
 </section>
 <section id="map">
-    <div id="map-frame">
+    <div id="map1">
     </div>
 </section>
 
