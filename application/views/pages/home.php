@@ -157,7 +157,7 @@
                     <a href="#" class="social-link"><i class="icon ion-social-googleplus"></i></a>
                 </div>
             </div>
-            <div class="col-md-6 col-md-offset-1">
+            <div class="col-md-6 col-md-offset-1 contact-right">
                 <form role="form">
                     <div class="form-group">
                         <input type="text" class="form-control" id="naam" placeholder="Naam">

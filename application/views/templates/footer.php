@@ -10,16 +10,16 @@
                     <h4>We make IT happen</h4>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-3 col-sm-6 col-xs-12 footer-links">
                     <h3 class="footer-title">Links</h3>
                     <ul>
-                        <li><a href="#">IT</a></li>
-                        <li><a href="#">COMMUNICATIONS</a></li>
-                        <li><a href="#">HOTSPOT</a></li>
+                        <li><a href="<?php echo site_url('it'); ?>">IT</a></li>
+                        <li><a href="<?php echo site_url('Communications'); ?>">COMMUNICATIONS</a></li>
+                        <li><a href="<?php echo site_url('Hotspot'); ?>">HOTSPOT</a></li>
                     </ul>
                 </div>
                 <!-- Social -->
-                <div class="col-md-4 col-md-offset-1 col-sm-12">
+                <div class="col-md-4 col-md-offset-1 col-sm-12 footer-social">
                     <h3 class="footer-title">Volg ons</h3>
                     <a href="#" class="social-link"><i class="icon ion-social-facebook"></i></a>
                     <a href="#" class="social-link"><i class="icon ion-social-twitter"></i></a>

@@ -456,6 +456,14 @@ body{
     .counter-box{
         margin-bottom: 1.5em;
     }
+
+    .contact-right{
+        margin-top: 350px;
+    }
+
+    .footer-social{
+        text-align: center;
+    }
 }
 
 @media (max-width: 767px){
@@ -465,5 +473,13 @@ body{
 
     .counter-box{
         margin-bottom: 2em;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .footer-links{
+        margin-bottom: 30px;
     }
 }
