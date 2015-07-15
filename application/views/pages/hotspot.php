@@ -17,9 +17,8 @@
                 </p>
             </div>
             <div class="col-md-6">
-
+                <img src="<?php echo base_url(); ?>assets/img/OptimiseHotspot.png" class="img-responsive img-rounded center-block"/>
             </div>
-
         </div>
     </div>
 </section>

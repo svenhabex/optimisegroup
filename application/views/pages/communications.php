@@ -28,7 +28,9 @@
         <div class="row boxes">
             <?php foreach($projecten as $project){ ?>
                 <div class="col-md-3 col-sm-6">
-                    <div class="project" id="<?= $project->proj_id ?>"><?= $project->proj_titel ?></div>
+                    <div class="project" id="<?= $project->proj_id ?>" style="background: url('<?= $project->proj_afbeelding ?>') center top no-repeat">
+                        <div class="titel"><?= $project->proj_titel ?></div>
+                    </div>
                 </div>
             <?php } ?>
         </div>
