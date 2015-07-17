@@ -32,13 +32,16 @@ body{
     margin-bottom: 0.5em;
 }
 
-.hero-link{
+.hero-arrow{
     position: absolute;
     display: block;
     left: 50%;
     top: 100vh;
     margin-top: -60px;
     margin-left: -25px;
+}
+
+.hero-link{
     color: #ffffff;
     font-size: 50px;
     transition: all 0.3s ease-in-out;

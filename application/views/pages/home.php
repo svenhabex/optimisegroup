@@ -5,7 +5,9 @@
     <div class="hero-text">
         <p class="hero-title">We make <span style="color: #97cb4c ">IT</span> happen</p>
     </div>
-    <a href="#over"><i class="ion-chevron-down hero-link"></i></a>
+    <div class="hero-arrow">
+        <a href="#over"><i class="ion-chevron-down hero-link"></i></a>
+    </div>
 </div>
 <section id="over">
     <div class="container section-content">
@@ -53,13 +55,6 @@
             <div class="col-md-3 col-sm-6 box">
                 <div class="team-box">
                     <img src="assets/img/profilepic.jpg" class="img-responsive img-circle profile-pic"/>
-                    <h3>Sam Goosens</h3>
-                    <p>Lead developper</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 box">
-                <div class="team-box">
-                    <img src="assets/img/profilepic.jpg" class="img-responsive img-circle profile-pic"/>
                     <h3>Timothy Vanderaerden</h3>
                     <p>Web developer</p>
                 </div>
@@ -71,8 +66,6 @@
                     <p>Telefonie specialist</p>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-md-3 col-sm-6 box">
                 <div class="team-box">
                     <img src="assets/img/profilepic.jpg" class="img-responsive img-circle profile-pic"/>
@@ -80,8 +73,6 @@
                     <p>Web developer</p>
                 </div>
             </div>
-        </div>
-    </div>
 </section>
 <section id="counter">
     <div class="container">
@@ -196,26 +187,43 @@
 
 <script type="text/javascript">
 
-    $('.project').click(function(){
-        var project = $(this).attr('id');
-        $.ajax({
-            'type': "POST",
-            'url': "<?php echo site_url('portfolio/getProject'); ?>",
-            'data': {'project' : project},
-            'success': function (response) {
-                var projectInfo = $.parseJSON(response);
-                $('.lead').text(projectInfo[0].proj_titel);
-                $('.text-project').text(projectInfo[0].proj_beschrijving);
-                $('.graphic').css('background', 'url(' + projectInfo[0].proj_afbeelding + ') center right no-repeat')
-                $('.graphic').css('background-size', 'contain');
+    $(document).ready(function(){
 
-                $('.overlay').addClass('is-open');
-            }
+        $('.project').click(function(){
+            var project = $(this).attr('id');
+            $.ajax({
+                'type': "POST",
+                'url': "<?php echo site_url('portfolio/getProject'); ?>",
+                'data': {'project' : project},
+                'success': function (response) {
+                    var projectInfo = $.parseJSON(response);
+                    $('.lead').text(projectInfo[0].proj_titel);
+                    $('.text-project').text(projectInfo[0].proj_beschrijving);
+                    $('.graphic').css('background', 'url(' + projectInfo[0].proj_afbeelding + ') center right no-repeat')
+                    $('.graphic').css('background-size', 'contain');
+
+                    $('.overlay').addClass('is-open');
+                }
+            });
         });
-    });
 
-    $('.close-btn').click(function(){
-        $('.overlay').removeClass('is-open');
+        $('.close-btn').click(function(){
+            $('.overlay').removeClass('is-open');
+        });
+
     });
+    doBounce($('.hero-arrow'), 3, '10px', 500);
+    setInterval(function(){
+        doBounce($('.hero-arrow'), 3, '10px', 500);
+    }, 1000);
+
+    function doBounce(element, times, distance, speed) {
+        for(i = 0; i < times; i++) {
+            element.animate({marginTop: '-='+distance},speed)
+                .animate({marginTop: '+='+distance},speed);
+        }
+    }
+
+
 
 </script>
