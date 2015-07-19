@@ -447,6 +447,63 @@ body{
     margin-bottom: 100px;
 }
 
+.play{
+     position: absolute;
+     bottom: 20px;
+     right: 20px;
+     font-size: 30px;
+     color: #ffffff;
+     padding: 5px;
+     background-color: rgba(0,0,0,0.6);
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     text-align: center;
+     display: table-cell;
+     transition: all 0.3s ease-in-out;
+ }
+
+.play i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -7.5px;
+}
+
+.play:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.sound{
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: table-cell;
+    transition: all 0.3s ease-in-out;
+}
+
+.sound i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -13px;
+}
+
+.sound:hover{
+    color: grey;
+    cursor: pointer;
+}
 
 /* -----------------------------------*/
 /* ------->>> Media queries <<<-------*/

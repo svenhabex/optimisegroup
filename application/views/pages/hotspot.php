@@ -2,9 +2,13 @@
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <div class="hero-page-hotspot">
     <?php $this->load->view('templates/menu') ?>
-    <video autoplay loop muted poster="../../../optimisegroup/assets/img/hotspotposter.jpg" id="bgvid">
+    <video autoplay muted poster="../../../optimisegroup/assets/img/hotspotposter.jpg" id="bgvid">
         <source src="../../../optimisegroup/assets/img/OptimiseITpromo.mp4" type="video/mp4">
     </video>
+    <div class="play" id="pause"><i class="ion-pause"></i></div>
+    <div class="play" id="play" style="display: none"><i class="ion-play"></i></div>
+    <div class="sound" id="unmute"><i class="ion-volume-high"></i></div>
+    <div class="sound" id="mute" style="display: none"><i class="ion-volume-mute"></i></div>
 </div>
 <section id="hotspot">
     <div class="container section-content">
@@ -62,5 +66,53 @@
     $('.close-btn').click(function(){
         $('.overlay').removeClass('is-open');
     });
+
+
+    //video play, pause
+    if($("#bgvid").get(0).paused){
+        $('#play').css('display', 'none');
+        $('#pause').css('display', 'block');
+    }else{
+        $('#pause').css('display', 'none');
+        $('#play').css('display', 'block');
+    }
+
+    $('#pause').click(function(){
+        var vid = $('#bgvid');
+        vid.get(0).pause();
+        $('#pause').css('display', 'none');
+        $('#play').css('display', 'block');
+    });
+
+    $('#play').click(function(){
+        var vid = $('#bgvid');
+        vid.get(0).play();
+        $('#play').css('display', 'none');
+        $('#pause').css('display', 'block');
+    });
+
+    $('#bgvid').on('ended',function(){
+        $('#pause').css('display', 'none');
+        $('#play').css('display', 'block');
+    });
+
+    $("#bgvid").prop('muted', true);
+
+    $(".sound").click( function (){
+        if($("#bgvid").prop('muted'))
+        {
+            $("#bgvid").prop('muted', false);
+            $('#unmute').css('display', 'none');
+            $('#mute').css('display', 'block');
+        }
+
+        else {
+            $("#bgvid").prop('muted', true);
+            $('#mute').css('display', 'none');
+            $('#unmute').css('display', 'block');
+        }
+
+    });
+
 
 </script>

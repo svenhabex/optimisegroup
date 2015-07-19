@@ -212,9 +212,9 @@
         });
 
     });
-    doBounce($('.hero-arrow'), 3, '10px', 500);
+    doBounce($('.hero-arrow'), 3, '7px', 500);
     setInterval(function(){
-        doBounce($('.hero-arrow'), 3, '10px', 500);
+        doBounce($('.hero-arrow'), 3, '7px', 500);
     }, 1000);
 
     function doBounce(element, times, distance, speed) {
