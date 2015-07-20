@@ -25,7 +25,7 @@
                     <a href="#" class="social-link"><i class="icon ion-social-twitter"></i></a>
                     <a href="#" class="social-link"><i class="icon ion-social-googleplus"></i></a><br><br>
                     <p>Kempische Steenweg 293 <br>3500 Hasselt, België</p>
-                    <p>Mail: optimiseit@gmail.com</p>
+                    <p>Mail: info@optimise-group.be</p>
                     <p>Tel: 0492/636146</p>
                 </div>
                 <!-- End Social -->

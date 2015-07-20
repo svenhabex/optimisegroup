@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-xs-9">
                     <h3>Informatie</h3>
-                    <p>Mail: optimiseit@gmail.com</p>
+                    <p>Mail: info@optimise-group.be</p>
                     <p>Tel: 0492/636146</p>
                 </div>
                 <div class="col-xs-3 icon-contact">
@@ -36,7 +36,7 @@
                     <a href="#" class="social-link"><i class="icon ion-social-googleplus"></i></a>
                 </div>
             </div>
-            <div class="col-md-6 col-md-offset-1 contact-right">
+            <div class="col-md-6 col-md-offset-1 contact-right" id="contactsend">
                 <form role="form">
                     <div class="form-group">
                         <input type="text" class="form-control" id="naam" placeholder="Naam">
@@ -50,8 +50,11 @@
                     <div class="form-group">
                         <textarea class="form-control" id="bericht" placeholder="Bericht" rows="8"></textarea>
                     </div>
-                    <a href="#" class="contact-send"><i class="icon ion-android-send"></i>&nbsp;Verstuur bericht</a>
+                    <div class="contact-send"><i class="icon ion-android-send"></i>&nbsp;Verstuur bericht</div>
                 </form>
+            </div>
+            <div class="col-md-6" style="display: none" id="sendok">
+                Bedankt, we zullen uw bericht zo snel mogelijk beantwoorden
             </div>
         </div>
     </div>
@@ -74,15 +77,17 @@
             onderwerp = $('#onderwerp').val();
             bericht = $('#bericht').val();
 
+            $('#contactsend').css('display', 'none');
+            $('#sendok').css('display', 'block');
+
             $.ajax({
                 'type': "POST",
-                'url': "mail.php",
+                'url': "<?php echo site_url('Contact/sendmail');?>",
                 'data': {'name' : naam, 'email' : email, 'subject' : onderwerp, 'message' : bericht},
                 'success': function (response) {
                     console.log(response);
                 }
             });
-
         });
 
     });

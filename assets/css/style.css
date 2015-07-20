@@ -227,10 +227,14 @@ body{
     top: 0;
     left: 0;
     position: fixed;
+    display: -webkit-flex;
     display: flex;
-    display: -webkit-flex; /* Safari */
-    justify-content: center;
+    -webkit-flex-direction: row; /* works with row or column */
+    flex-direction: row;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease-in-out;

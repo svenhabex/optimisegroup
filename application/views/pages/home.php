@@ -135,7 +135,7 @@
                 </div>
                 <div class="col-xs-9">
                     <h3>Informatie</h3>
-                    <p>Mail: optimiseit@gmail.com</p>
+                    <p>Mail: info@optimise-group.be</p>
                     <p>Tel: 0492/636146</p>
                 </div>
                 <div class="col-xs-3 icon-contact">
