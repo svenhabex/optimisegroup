@@ -75,7 +75,7 @@
                 var projectInfo = $.parseJSON(response);
                 $('.lead').text(projectInfo[0].proj_titel);
                 $('.text-project').text(projectInfo[0].proj_beschrijving);
-                $('.graphic').css('background', 'url(' + projectInfo[0].proj_afbeelding + ') center right no-repeat')
+                $('.graphic').css('background', 'url(' + projectInfo[0].proj_afbeelding + ') center right no-repeat');
                 $('.graphic').css('background-size', 'contain');
 
                 $('.overlay').addClass('is-open');
