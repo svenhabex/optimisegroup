@@ -2,7 +2,7 @@
     <?php $this->load->view('templates/menu') ?>
     <div class="hero-text-page">
         <p class="hero-title-page">IT</p>
-        <p class="hero-info-page">Webdesign / Computerreiniging</p>
+        <p class="hero-info-page">Webdesign / Netwerk / Applicatie</p>
     </div>
 </div>
 <section id="webdesign">
@@ -18,7 +18,7 @@
                     <br><br>
                     Verder verzorgen wij de hosting van uw site, het hele jaar door. Zo hoeft u zich hier niets van aan te trekken en kan u zich focussen op uw eigen activiteiten.
                     <br><br>
-                    Aangezien elke website verschillend is, kunnen wij geen richtprijs vooropstellen. De kostprijs van de website hangt af van verschillende elementen die zeer ver uit elkaar liggen. U kan natuurlijk altijd een offerte of een gratis kennismakingsgesprek aanvragen via contact.
+                    Aangezien elke website verschillend is, kunnen wij geen richtprijs vooropstellen. De kostprijs van de website hangt af van verschillende elementen die zeer ver uit elkaar liggen. U kan natuurlijk altijd een offerte of een gratis kennismakingsgesprek aanvragen via <a href="<?php echo site_url('contact'); ?>">contact</a>.
                 </p>
             </div>
             <div class="col-md-6">
@@ -28,21 +28,38 @@
     </div>
 </section>
 <hr>
-<section id="reiniging">
+<section id="netwerk">
     <div class="container section-content">
         <div class="row">
             <div class="col-md-6">
-                <img src="<?php echo base_url(); ?>assets/img/reiniging.jpg" class="img-responsive img-rounded"/>
+                <img src="<?php echo base_url(); ?>assets/img/netwerkbeheer.jpg" class="img-responsive img-rounded"/>
             </div>
             <div class="col-md-6">
-                <h2>Computerreiniging</h2>
+                <h2>Netwerkbeheer</h2>
                 <p>
-                    Studies hebben uitgewezen dat uw toetsenbord een broeihaard voor bacteriën is. Op uw klavier bevinden zich tot 400 keer meer bacteriën dan op uw toiletbril. Daarom hebben wij ons gespecialiseerd in het professioneel reinigen van uw computer.
+                    Wij helpen u graag met het opzetten van een netwerk binnen uw bedrijf. We zorgen ervoor dat er overal een uitstekende verbinding is, door zo min mogelijk acces points te gebruiken. Zo zorgen wij ervoor dat de kost zo laag mogelijk blijft.
                     <br><br>
-                    Niemand vindt het leuk om aan een smerige computer te werken. Daarom doen we zowel een interne als externe reiniging. Zo ziet uw computer er niet alleen beter uit, hij zal ook sneller en efficiënter zijn na de reiniging.
+                    Door het toepassen van de nieuwste technologie en de beste hardware modellen zult u zorgenloos genieten van een snelle en veilige verbinding.
                     <br><br>
-                    De resultaten zijn dan ook simpel. Uw computer zal er als nieuw uitzien, minder snel verslijten en energiezuiniger presteren. Zelfs tijd is geen probleem. Een volledige computer reiniging neemt maximum 20 minuten in beslag. Niets dan voordelen dus!
+                    Wij geven u snelle en goede service. De kostprijs varieert van verschillende elementen. U kan natuurlijk altijd een offerte of een gratis kennismakingsgesprek aanvragen via <a href="<?php echo site_url('contact'); ?>">contact</a>.
                 </p>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<section id="applicatie">
+    <div class="container section-content">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Applicatie</h2>
+                <p>Wij zijn gespesialiseerd in het ontwikkelen van Windows Form applications en Android apps. Ons team staat u bij tijdens de ontwikkeling van de applicatie. Zo hebt u zicht over de app en kan u op elk moment een wijziging doorgeven.
+                    <br><br>
+                    Graag helpen wij u verder tot de ontwikkeling van een applicatie op maat. De kostprijs varieert van verschillende elementen. U kan natuurlijk altijd een offerte of een gratis kennismakingsgesprek aanvragen via <a href="<?php echo site_url('contact'); ?>">contact</a>.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="<?php echo base_url(); ?>assets/img/responsive.jpg" class="img-responsive img-rounded"/>
             </div>
         </div>
     </div>

@@ -13,35 +13,53 @@
     <div class="container section-content">
         <h1>Over ons</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula justo odio, vitae dapibus neque fringilla eget. Aliquam erat volutpat. Etiam enim sapien, dignissim eu nibh ac, gravida euismod sapien. Maecenas consectetur tortor vitae odio volutpat, eleifend molestie dui vehicula. In posuere nulla faucibus, ornare tellus semper, maximus nisi. Quisque semper porttitor placerat. Ut blandit, libero nec eleifend facilisis, turpis nunc pretium arcu, vehicula porttitor turpis sapien sed mi. Nam viverra congue aliquam. Sed semper risus non est venenatis egestas. Vestibulum tortor orci, pulvinar sed efficitur sit amet, maximus id nisi. Praesent elementum augue et dignissim viverra. Praesent elementum vulputate pellentesque. Nulla et eleifend neque, sit amet venenatis nibh.
+            Wij zijn een jong dynamisch bedrijf dat gespeciaiseerd is in webdesign en netwerk beheer. Wij gebruiken altijd de nieuwste technologie en volgen de laatste trends. In samenspraak met de klant geven wij vorm aan uw idee. En dit allemaal tegen een goede prijs.
+            <br>
+            <br>
+            Ook ontwikkelen wij applicatie's op maat van uw bedrijf. U kunt altijd eens een kijkje nemen in ons <a href="#portfolio" >portfolio</a> voor meer inzicht in ons werk.
+            <br>
+            <br>
+            Bij Optimise-Group bent u dus in goede handen, wij staan altijd paraat om u verder te helpen.
+            <br>
+            <br>
+            We make <span style="color: #97cb4c ">IT</span> Happen!
         </p>
         <div class="row boxes">
             <div class="col-md-4 box">
                 <div class="over-box">
-                    <i class="icon ion-android-desktop over-icon"></i>
-                    <h3>IT</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula justo odio, vitae dapibus neque fringilla eget. Aliquam erat volutpat.</p>
+                    <i class="icon ion-android-desktop over-icon" onclick="location.href='<?php echo site_url('it'); ?>'" style="cursor:pointer;"></i>
+                    <h3 onclick="location.href='<?php echo site_url('it'); ?>'" style="cursor:pointer;">IT</h3>
+                    <p>Bij Optimise-Group kun je terecht voor een proffesionele website of een krachtige applicatie. Ook kunnen wij uw bedrijf                              voorzien van een krachtig netwerk. En dat allemaal opmaat gemaakt!
+                        <br><br>
+                        Nog niet overtuigd? Geen probleem, neem gerust een  kijkje in ons <a href="#portfolio">portfolio.</a>
+                    </p>
                 </div>
             </div>
             <div class="col-md-4 box">
                 <div class="over-box">
-                    <i class="icon ion-android-call over-icon"></i>
-                    <h3>Communications</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula justo odio, vitae dapibus neque fringilla eget. Aliquam erat volutpat.</p>
+                    <i class="icon ion-android-call over-icon" onclick="location.href='<?php echo site_url('communications'); ?>'" style="cursor:pointer;"></i>
+                    <h3 onclick="location.href='<?php echo site_url('communications'); ?>'" style="cursor:pointer;">Communications</h3>
+                    <p>Met cloud telefonie kunt u bellen over het internet. Dus geen telefooncentrale meer voor u, maar een centraal VoIP netwerk.                          Hierdoor komen er minder kosten bij kijken.
+                        <br><br>
+                        Bij cloud telefonie wordt de spraak door uw telefoon in data omgezet en door de centrale naar het juiste adres gestuurd.                             Steeds meer bedrijven kiezen voor cloud telefonie dus waar wacht u op?
+                    </p>
                 </div>
             </div>
             <div class="col-md-4 box">
                 <div class="over-box">
-                    <i class="icon ion-android-wifi over-icon"></i>
-                    <h3>Hotspot</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula justo odio, vitae dapibus neque fringilla eget. Aliquam erat volutpat.</p>
+                    <i class="icon ion-android-wifi over-icon" onclick="location.href='<?php echo site_url('hotspot'); ?>'" style="cursor:pointer;"></i>
+                    <h3 onclick="location.href='<?php echo site_url('hotspot'); ?>'" style="cursor:pointer;">Hotspot</h3>
+                    <p>Met de Optimise-hotspot verleent u gratis internet aan uw klanten in ruil voor een facebook check in. Hierdoor geniet de klant                       van het gratis netwerk en u bereikt potentiële klanten.
+                        <br><br>
+                        Onze hotspots worden voorzien van een uitgebreid dashboard dat u een inzicht geeft van uw klanten. Dit is dus een krachtige                             marketing tool die uw bedrijf niet kan missen.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <hr>
-<section id="team">
+<!--<section id="team">
     <div class="container section-content">
         <h1>Het team</h1>
         <div class="row boxes">
@@ -56,7 +74,7 @@
                 <div class="team-box">
                     <img src="assets/img/profilepic.jpg" class="img-responsive img-circle profile-pic"/>
                     <h3>Timothy Vanderaerden</h3>
-                    <p>Web developer</p>
+                    <p>Application developer</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 box">
@@ -73,7 +91,7 @@
                     <p>Web developer</p>
                 </div>
             </div>
-</section>
+</section>-->
 <section id="counter">
     <div class="container">
         <div class="col-md-3 col-sm-6">
@@ -179,6 +197,7 @@
         <div class="text-box">
             <p class="lead"></p>
             <p class="text-project"></p>
+            <a href="" class="link" target="_blank">Bekijk project</a>
         </div>
         <div class="graphic"></div>
     </div>
@@ -201,7 +220,7 @@
                     $('.text-project').text(projectInfo[0].proj_beschrijving);
                     $('.graphic').css('background', 'url(' + projectInfo[0].proj_afbeelding + ') center right no-repeat')
                     $('.graphic').css('background-size', 'contain');
-
+                    $('.link').attr("href", projectInfo[0].proj_link);
                     $('.overlay').addClass('is-open');
                 }
             });
